@@ -1,0 +1,425 @@
+/* CSS disini tempatnya */
+
+/* import section */
+@import url("style/bootstrap/css/bootstrap.min.css");
+
+* {
+	font-family: Arial, Verdana, Sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+li {
+	list-style: none;
+}
+
+body div#kotak-bingkai {
+	width: 90%; 
+	margin: 0 auto; /* margin atas + bawah = 0, kiri + kanan = otomatis, sehingga hasilnya di tengah */
+	border: 2px solid purple;
+	padding: 5px 5px 5px 5px;
+}
+
+
+
+/* Header */
+
+body header {
+	border: 1px solid purple;
+	padding: 0 5px 0 5px;
+}
+
+body header h1 {
+	margin: 10px 0 0 0;
+}
+
+body header p {
+	margin: 0 0 20px 0;
+}
+
+
+
+
+/* Menu */
+.nav-container.dark {
+  background: #222;
+}
+
+.nav-container.transparent {
+  background: transparent;
+}
+
+.nav-container.transparent-light {
+  background: transparent;
+}
+
+.nav-container,
+nav {
+  overflow: visible;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+nav {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+nav a {
+  color: #666666;
+}
+
+.nav-inner .navbar {
+  height: 100px;
+  max-height: 100px;
+  margin: 0;
+}
+
+.nav-inner .menu {
+  margin-top: 26px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.nav-inner .menu:first-child li {
+  position: relative;
+}
+
+.nav-inner .menu a.btn {
+  margin-top: -10px;
+}
+
+.nav-inner .logo {
+  margin-top: 28px;
+}
+
+nav.dark .navbar {
+  height: 80px;
+  background: #222;
+  color: #ffffff;
+}
+
+nav.dark a {
+  color: #ffffff;
+}
+
+nav.transparent .navbar {
+  background: transparent;
+  color: #555555;
+}
+
+nav.transparent a {
+  color: #555555;
+}
+.sticky nav.transparent a {
+  color: #ffffff;
+}
+
+nav.transparent-light .navbar {
+  background: transparent;
+  color: #333333;
+}
+
+nav.transparent-light a {
+  color: #333333;
+}
+
+.sticky nav.nav-inner .navbar {
+  height: 70px;
+  max-height: 70px;
+  margin: 0;
+  background: #222222;
+}
+
+.sticky nav.nav-inner .menu:first-child li {
+  position: relative;
+}
+
+.sticky nav.nav-inner .brand {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 18px 0;  
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.sticky nav.nav-inner .menu {
+  margin-top: 19px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.navbar {
+  border-radius: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.nav-open .navbar {
+  height: auto !important;
+  max-height: 600px !important;
+}
+
+nav .brand {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 24px 0;  
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+nav .brand a {
+  opacity: 1;
+}
+
+nav .brand a:hover {
+  opacity: 0.7;
+}
+
+@media all and (max-width: 768px) {
+  nav {
+    overflow: hidden;
+  }
+}
+
+
+nav ul {
+  display: inline-block;
+}
+nav ul.right {
+  float: right;
+  right: 0
+}
+@media all and (max-width: 990px) {
+  nav ul.right {
+  float: left;
+  }
+}
+nav ul li {
+  float: left;
+  margin-right: 26.66666667px;
+  font-size: 14px;
+}
+nav ul ul {
+  position: absolute;
+  background: #ffffff;
+  visibility: hidden;
+  z-index: 999;
+  min-width: 150px;
+  padding: 0;
+  border-radius: 3px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 0;
+}
+nav ul ul li {
+  line-height: 32px;
+  text-align: left;
+  position: relative;
+  margin-right: 0;
+  width: 100%;
+}
+nav ul ul li a {
+  display: block;
+  padding: 0 20px;
+  width: 100%;
+}
+nav ul ul li:first-child {
+  padding-top: 8px;
+}
+nav ul ul li:last-child {
+  padding-bottom: 8px;
+}
+nav ul li:hover ul:nth-of-type(1) {
+  visibility: visible;
+  opacity: 1;
+}
+nav ul li:hover .subnav .subnav {
+  visibility: hidden;
+  opacity: 0;
+}
+.has-dropdown .has-dropdown:hover .subnav {
+  visibility: visible;
+  opacity: 1;
+}
+.has-dropdown .subnav .subnav {
+  top: 0;
+  left: 100%;
+}
+@media all and (max-width: 990px) {
+  nav,
+  nav.fixed,
+  nav.overlay,
+  .navbar {
+    overflow: hidden;
+  }
+  nav.transparent .navbar {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+  nav.transparent a {
+  color: #ffffff;
+  }
+
+  nav.transparent-light .navbar {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+  nav.transparent-light a {
+  color: #ffffff;
+  }
+  nav ul ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    margin-top: 0;
+  }
+  nav ul ul ul {
+    display: none;
+    margin-left: 16px;
+  }
+  nav ul ul li:hover ul {
+    display: block;
+  }
+  .has-dropdown .subnav .subnav {
+    left: 0;
+  }
+  .has-dropdown:hover .subnav {
+    max-height: 300px;
+  }
+  .has-dropdown:hover .subnav .subnav {
+    max-height: 0;
+  }
+  .has-dropdown .has-dropdown:hover .subnav {
+    max-height: 300px;
+  }
+}
+.mobile-toggle {
+  position: relative;
+  cursor: pointer;
+  top: 0px;
+  margin-left: 18px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  opacity: 1;
+  display: none;
+}
+.mobile-toggle:hover,
+.mobile-toggle.active {
+  opacity: 0.5;
+}
+.mobile-toggle img {
+	width: 30px;
+  padding: 14px 0;
+}
+@media all and (max-width: 990px) {
+  .mobile-toggle {
+    display: inline-block;
+  }
+}
+
+
+@media all and (max-width: 990px) {
+  .nav-inner .navbar {
+    height: 80px;
+    max-height: 80px;
+  }
+  .sticky nav.nav-inner .navbar {
+    height: 80px;
+    max-height: 80px;
+  }
+  .sticky nav.nav-inner .brand {
+  padding: 24px 0;
+  }
+  .nav-inner .menu a.btn {
+  margin-top: 10px;
+  }
+  .nav-inner .text-center {
+    text-align: left;
+  }
+  .nav-inner .menu {
+    margin-bottom: 8px;
+  }
+  .nav-inner .menu li {
+    float: none !important;
+    margin: 0;
+    line-height: 32px;
+  }
+  .nav-inner .btn {
+    margin-top: 16px;
+  }
+  .nav-inner .mobile-toggle {
+    top: 8px;
+  }
+}
+
+
+/* Main */
+
+body main {
+	padding-top: 100px;
+}
+
+body main .container {
+}
+
+body main div.pembuka {
+
+}
+
+		main div.pembuka h1 {
+			margin: 20px 0 25px 0;
+		}
+
+
+body main div.isi {
+	border: 1px solid red;
+	padding: 0 0 0 15px;
+}
+
+		main div.isi > p {
+			border: 1px solid red;
+			margin: 5px 0 10px 0;
+			text-indent: 50px;
+		}
+
+
+body main div.penutup {
+	border: 1px solid red;
+	padding: 0 0 0 15px;
+	margin: 0 0 5px 0;
+}
